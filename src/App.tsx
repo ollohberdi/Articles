@@ -11,6 +11,7 @@ import { ArticleReader } from './components/ArticleReader';
 import { VocabularyExercises } from './components/VocabularyExercises';
 import { VocabularyGym } from './components/VocabularyGym';
 import { VocabularyNotebook } from './components/VocabularyNotebook';
+import { CreatorSection } from './components/CreatorSection';
 import { ARTICLES_DATA } from './data/articlesData';
 import { Article, CEFRLevel, VocabularyItem, UserSavedWord } from './types';
 import { filterArticles } from './utils/quizLogic';
@@ -233,6 +234,9 @@ export default function App() {
               </div>
             )}
           </section>
+
+          {/* Creator & Teacher Profile Section */}
+          <CreatorSection />
         </main>
       )}
 
@@ -249,10 +253,19 @@ export default function App() {
       {/* Clean Footer */}
       <footer className="border-t border-stone-200/80 bg-white py-8 px-4 sm:px-6 text-xs text-stone-500">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
             <span className="font-serif font-bold text-stone-900 text-sm">Articles ED (Every day)</span>
             <span>·</span>
-            <span>Graded English Readers for B1, B2, and C1 Learners</span>
+            <span>Created by Ollohberdi Shokirov</span>
+            <span>·</span>
+            <a
+              href="https://t.me/ShokirovOllohberdi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-800 hover:text-amber-950 font-semibold hover:underline transition-colors"
+            >
+              Telegram: @ShokirovOllohberdi
+            </a>
           </div>
           <div className="flex items-center gap-4 text-xs font-medium">
             <button
