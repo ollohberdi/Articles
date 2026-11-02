@@ -62,7 +62,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl space-y-2.5">
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-stone-950 leading-tight">
-              Read authentic articles at your exact English level.
+              Read authentic English articles every day.
             </h1>
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
               {levelMetadata[selectedLevel].desc}
